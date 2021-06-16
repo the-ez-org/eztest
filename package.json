@@ -1,0 +1,32 @@
+{
+  "name": "@the-ez-org/eztest",
+  "version": "0.1.0-beta.0",
+  "description": "Easy Peasy Unit Testing",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-ez-org/eztest.git"
+  },
+  "keywords": [
+    "Unit",
+    "Test",
+    "Testing"
+  ],
+  "author": "ExpressGradient",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/the-ez-org/eztest/issues"
+  },
+  "homepage": "https://github.com/the-ez-org/eztest#readme",
+  "devDependencies": {
+    "@types/node": "^15.12.2",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "colorette": "^1.2.2"
+  }
+}
