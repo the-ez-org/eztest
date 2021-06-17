@@ -66,8 +66,9 @@ export class Test<I, E> {
             console.log(bgGreen(bold(white(`${this.name} Test Passed`))));
         }
 
-        // @ts-ignore
-        console.log(bgBlack(white(this.individualStatuses + "\n\n")));
+        console.log(
+            bgBlack(white(this.individualStatuses.toString() + "\n\n"))
+        );
     }
 
     async onEnd() {}

@@ -123,8 +123,7 @@ var Test = /** @class */ (function () {
                             console.log("✔");
                             console.log(colorette_1.bgGreen(colorette_1.bold(colorette_1.white(this.name + " Test Passed"))));
                         }
-                        // @ts-ignore
-                        console.log(colorette_1.bgBlack(colorette_1.white(this.individualStatuses + "\n\n")));
+                        console.log(colorette_1.bgBlack(colorette_1.white(this.individualStatuses.toString() + "\n\n")));
                         return [2 /*return*/];
                 }
             });
