@@ -96,7 +96,7 @@ var Test = /** @class */ (function () {
                         return [4 /*yield*/, this.test(caseData)];
                     case 4:
                         testResult = _b.sent();
-                        if (testResult.condition) {
+                        if (testResult.assertion) {
                             this.individualStatuses.push("PASS");
                         }
                         else {

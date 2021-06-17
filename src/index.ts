@@ -19,7 +19,7 @@ export class Test<I, E> {
         id: string;
         data: I;
         expected: E;
-    }): Promise<{ result: E; condition: boolean }> {
+    }): Promise<{ result: E; assertion: boolean }> {
         return;
     }
 
@@ -33,7 +33,7 @@ export class Test<I, E> {
 
             const testResult = await this.test(caseData);
 
-            if (testResult.condition) {
+            if (testResult.assertion) {
                 this.individualStatuses.push("PASS");
             } else {
                 this.individualStatuses.push("FAIL");

@@ -15,7 +15,7 @@ export declare class Test<I, E> {
         expected: E;
     }): Promise<{
         result: E;
-        condition: boolean;
+        assertion: boolean;
     }>;
     afterEveryTest(): Promise<void>;
     run(): Promise<void>;
